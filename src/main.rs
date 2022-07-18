@@ -1,8 +1,5 @@
-// use std::array;
-// use std::io;
 use rand::thread_rng;
 use rand::Rng;
-// use text_io::read;
 use text_io::try_read;
 use std::io::{self, Write};
 
@@ -42,24 +39,6 @@ impl Compare<i32> for Comparator {
         }
     }
 }
-
-// fn generic_sort<T>(mut arr: Vec<T>, cmp: dyn Compare<T>) -> Vec<T> {
-//     let size = arr.len();
-
-//     for i in 0..size {
-//         let mut min = i;
-//         for n in i + 1..size {
-//             if cmp.compare(arr[min], arr[n]) > 0 {
-//                 min = n;
-//             }
-//         }
-
-//         let temp = arr[i];
-//         arr[i] = arr[min];
-//         arr[min] = temp;
-//     }
-//     return arr;
-// }
 
 fn sort(mut arr: Vec<i32>) -> Vec<i32> {
     let size = arr.len();
